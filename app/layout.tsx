@@ -11,7 +11,11 @@ export const metadata: Metadata = {
   description: 'Simple and efficient app for managing personal notes',
 };
 
-export default function RootLayout({ children }: LayoutProps<'/'>) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en">
       <body>
